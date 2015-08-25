@@ -12,3 +12,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# Custom settings
+permalink: /blog/:title.html
