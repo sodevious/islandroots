@@ -27,7 +27,18 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$section-padding: 60px;
 
+$roots-blue-dark: #38A8A5;
+$roots-blue-light: #8ACFC6;
+$roots-green-light: #A7CE85;
+$roots-green-dark: #6ABB63;
+$roots-brown-light: #3E2B29;
+$roots-brown-dark: #75524A;
+$roots-tan: #D3BD9A;
+
+$roots-serif: $base-font-family;
+$roots-sans-serif: "Raleway", sans-serif;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
