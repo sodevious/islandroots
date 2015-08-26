@@ -38,6 +38,16 @@ body
         padding: 20px
         margin: 0px auto
 
+    .section-paragraph
+        color: white
+        text-align: center
+        padding: 0px 10px
+        text-shadow: 0px 2px 2px rgba(0,0,0,0.75)
+        font-size: 1.4em
+        margin-top: 40px
+        line-height: 1.25em
+        margin-bottom: 40px
+
 .section-white
     background-white: white
     padding: $section-padding
@@ -283,11 +293,21 @@ body
     text-align: center
     color: $roots-blue-dark
     font-weight: 800
-    font-size: 1.1em
+    font-size: 1.35em
 
 .table > tbody > tr > td
     border-top-color: lighten($roots-blue-light, 10%)
     vertical-align: middle
+    text-align: center
+
+    &.table-no-column
+        color: #E42F45
+        font-size: 1.5em
+
+    &.table-yes-column
+        color: $roots-green-dark
+        font-size: 2em
+        font-weight: 800
 
     &.table-highlight-column
         background-color: $roots-blue-dark
