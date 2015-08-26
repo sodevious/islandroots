@@ -2,6 +2,9 @@
 // ----------------------------------
 body
     font-family: $roots-sans-serif
+    //color: #BBB
+    //color: #CCC
+    color: #505050
 
 .ir-logo
     width: 100%
@@ -78,13 +81,13 @@ body
         background-size: contain
         border-radius: 3px
         text-align: center
-        height: 297px
+        height: 365px
         color: white
 
     .pricing-heading
-        padding-top: 85px
+        padding-top: 115px
         font-weight: 800
-        font-size: 2em
+        font-size: 2.4em
 
     .pricing-small
         -webkit-transform: scale(0.8)
@@ -96,17 +99,32 @@ body
         font-size: 2.5em
 
     .pricing-paragraph
-        font-size: 1.6em
+        font-size: 1.75em
         line-height: 1.15em
-        padding: 18px 60px 2px
+        padding: 38px 100px 20px
+
+    .pricing-delivery
+        text-align: center
+        font-size: 1.4em
+        margin-top: 50px
+        font-weight: 600
+        margin-bottom: 10px
+        color: lighten($roots-green-light, 10%)
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5)
+
 
 .section-order
+    .col-xs-4
+        padding-left: 30px
+        padding-right: 30px
     .section-subheader
         font-weight: 800
+        text-transform: uppercase
+        text-align: center
         color: $roots-blue-dark
-        font-size: 1.4em
+        font-size: 1.5em
     .section-paragraph
-        font-size: 1em
+        font-size: 1.25em
         line-height: 1.25em
 
 .home-mission-statement
@@ -242,6 +260,35 @@ body
 
     h4
         font-size: 20px
+
+
+// Table
+// ----------------------------------
+
+
+.table > thead > tr > td
+    text-align: center
+    color: $roots-blue-dark
+    font-weight: 800
+    font-size: 1.1em
+
+.table > tbody > tr > td
+    border-top-color: lighten($roots-blue-light, 10%)
+    vertical-align: middle
+
+    &.table-highlight-column
+        background-color: $roots-blue-dark
+        color: #ffffff
+        font-size: 1.2em
+        border-top-color: $roots-blue-dark
+        padding: 18px 0px
+        text-transform: uppercase
+        font-weight: 100
+        text-align: center
+        strong
+            font-weight: 800
+
+
 
 // Footer
 // ----------------------------------
