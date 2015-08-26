@@ -1,6 +1,22 @@
+// General
+// ----------------------------------
 body
-    font-family: $base-font-family
+    font-family: $roots-sans-serif
 
+.ir-logo
+    width: 100%
+
+.section
+    border-bottom: 1px solid lighten($roots-blue-light, 20%)
+    h2
+        text-align: center
+        font-size: 2.4em
+        padding-bottom: 30px
+        font-weight: 200
+        color: darken($roots-blue-dark, 20%)
+
+// Homepage
+// ----------------------------------
 .section-homepage
     padding-top: 30px
     padding-bottom: 20px
@@ -9,7 +25,6 @@ body
     background-size: cover
 
     .section-header
-        font-family: $roots-sans-serif
         text-transform: uppercase
         text-align: center
         color: #ffffff
@@ -22,9 +37,6 @@ body
         padding: 20px
         margin: 0px auto
 
-.ir-logo
-    width: 100%
-
 .section-white
     background-white: white
     padding: $section-padding
@@ -33,7 +45,6 @@ body
         padding: 20px
     .panel-heading
         text-align: center
-        font-family: $roots-sans-serif
     .panel-title
         text-transform: uppercase
         font-weight: 800
@@ -46,18 +57,89 @@ body
     .panel-body
         li
             font-size: 1.25em
+        h2
+            margin-bottom: 0px
+            padding-bottom: 10px
+            font-size: 2em
 
-.section
-    border-bottom: 1px solid lighten($roots-tan, 20%)
+.section-pricing
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: cover
+
     h2
+        color: white
+
+    .pricing-box
+        background-image: url('/images/wooden-box.png')
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5)
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5)
+        background-repeat: no-repeat
+        background-size: contain
+        border-radius: 3px
         text-align: center
-        font-family: $roots-sans-serif
-        font-size: 2.4em
-        padding-bottom: 30px
-        font-weight: 200
-        color: darken($roots-blue-dark, 20%)
+        height: 297px
+        color: white
 
+    .pricing-heading
+        padding-top: 85px
+        font-weight: 800
+        font-size: 2em
 
+    .pricing-small
+        -webkit-transform: scale(0.8)
+        -ms-transform: scale(0.8)
+        -o-transform: scale(0.8)
+        transform: scale(0.8)
+
+    .pricing-cost
+        font-size: 2.5em
+
+    .pricing-paragraph
+        font-size: 1.6em
+        line-height: 1.15em
+        padding: 18px 60px 2px
+
+.section-order
+    .section-subheader
+        font-weight: 800
+        color: $roots-blue-dark
+        font-size: 1.4em
+    .section-paragraph
+        font-size: 1em
+        line-height: 1.25em
+
+.home-mission-statement
+    font-size: 1.5em
+
+.subscribe
+    padding-top: 40px
+    padding-bottom: 40px
+
+    .section-header
+        color: $roots-green-dark
+        margin-bottom: 30px
+        text-align: center
+        font-size: 1.65em
+        font-weight: 700
+
+    .section-subheader
+        font-size: 0.9em
+        text-align: center
+        text-transform: uppercase
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8)
+        color: lighten($roots-green-light, 20%)
+
+    .subscribe-form
+        padding-right: 0px
+
+    .btn-primary
+        border-color: transparent
+        text-transform: uppercase
+        background-color: $roots-green-dark
+
+// Panels
+// ----------------------------------
 .panel-blue
     border-color: $roots-blue-light
     .panel-heading
@@ -80,6 +162,8 @@ body
         small
             color: darken($roots-green-dark, 15%)
 
+// Backgrounds
+// ----------------------------------
 .section-bg-grass
     background-image: url('/images/grass.jpg')
 
@@ -97,17 +181,6 @@ body
     background-image: url('/images/veggies.jpg')
     background-position: center top
 
-.section-order
-    .section-subheader
-        font-weight: 800
-    .section-paragraph
-        font-family: $roots-sans-serif
-        font-size: 1em
-        line-height: 1.25em
-
-.home-mission-statement
-    font-size: 1.5em
-
 .site-title
     font-size: 26px
     line-height: 56px
@@ -118,8 +191,6 @@ body
     &, &:visited
         color: $grey-color-dark
 
-
-
 .site-nav
     float: right
     padding-bottom: 25px
@@ -129,36 +200,14 @@ body
         display: none
 
     .page-link
-        color: rgba(255,255,255,0.75)
-        font-family: $roots-sans-serif
+        color: rgba(255, 255, 255, 0.75)
         line-height: $base-line-height
 
         &:not(:first-child)
             margin-left: 30px
 
-.site-footer
-    padding: $spacing-unit 0
-
-.footer-heading
-    font-size: 18px
-    margin-bottom: $spacing-unit / 2
-
-.contact-list,
-.social-media-list
-    list-style: none
-    margin-left: 0
-
-.footer-col-wrapper
-    font-size: 15px
-    color: $grey-color
-    margin-left: -$spacing-unit / 2
-
-.page-content
-    padding: $spacing-unit 0
-
-.page-heading
-    font-size: 20px
-
+// Blog
+// ----------------------------------
 .post-list
     margin-left: 0
     list-style: none
@@ -194,22 +243,11 @@ body
     h4
         font-size: 20px
 
-.subscribe
-    padding-top: 40px
-    padding-bottom: 40px
+// Footer
+// ----------------------------------
+.site-footer
+    padding: $spacing-unit 0
 
-    .section-subheader
-        text-align: center
-        font-size: 0.9em
-        text-shadow: 0px 0px 3px rgba(0,0,0,0.8)
-        text-transform: uppercase
-        font-family: $roots-sans-serif
-        color: lighten($roots-green-light, 20%)
-
-    .subscribe-form
-        padding-right: 0px
-
-    .btn-primary
-        border-color: transparent
-        text-transform: uppercase
-        background-color: $roots-green-dark
+.footer-heading
+    font-size: 18px
+    margin-bottom: $spacing-unit / 2
